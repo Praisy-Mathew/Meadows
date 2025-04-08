@@ -10,7 +10,7 @@
     <!-- Title -->
     <title>The Meadows Villa By ABBA-Nearby Attractions</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/meadows.png" type="image/x-icon">
     
     <!-- Flaticon -->
     <link rel="stylesheet" href="assets/css/flaticon.min.css">
@@ -32,6 +32,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
   <style>
      .blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+        }
+        
+
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #367755; /* ✅ Green border on hover */
+        }
+        .image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .blog-grid-item {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -63,6 +98,27 @@
             font-size: 16px;
             color: #555;
         }
+        .form-group input {
+    background-color: black; /* Match other input fields */
+    border: .1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.blog-grid-item h4 {
+        color: #367755 !important; /* Change to any desired color */
+    }
+    @media (max-width: 768px) {
+    .mobile-logo img {
+        width: 250px; /* Adjust width as needed */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .menu-sidebar .theme-btn {
+        font-size: 12px; /* Reduce text size */
+        line-height: 1.2;
+    }
+}    
   </style>  
 </head>
 <body class="home-one">
@@ -79,7 +135,7 @@
 
                     <div class="header-inner rel d-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo" title="Logo" style="height: 100px; width: 250px;"></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/meadows.png" alt="Logo" title="Logo" style="height: 100px; width: 250px;"></a></div>
                         </div>
 
                         <div class="nav-outer clearfix me-auto">
@@ -88,7 +144,7 @@
                                 <div class="navbar-header">
                                    <div class="mobile-logo my-15">
                                        <a href="index.html">
-                                            <img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo" title="Logo">
+                                            <img src="assets/images/meadows.png" alt="Logo" title="Logo">
                                        </a>
                                    </div>
                                    
@@ -104,7 +160,7 @@
                                     <ul class="navigation clearfix">
                                          <li><a href="index.html">Home</a></li>
                                          <li><a href="about.html">About us</a></li>
-                                         <li><a href="room-list.html">Rooms</a></li>
+                                         
                                          <li class="active"><a href="near.html">Nearby Attractions</a></li>
                                          <li><a href="contact.html">Contact</a></li>
                                     </ul>
@@ -232,7 +288,18 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/343386268_af393ea137_b.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🏕 Pamba Triveni Sangam</h4>
+                                <p>25 km (45 minutes)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
         
                     <!-- Other Attractions -->
                     <div class="col-12">
@@ -342,6 +409,206 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/manjinikkara-dayara-church-1721202922_f8afb9acaa488c0d8919.webp" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>✝ Manjinikkara Church</h4>
+                                <p>13 km (30 minutes)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/parumala.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>✝ Parumala Church</h4>
+                                <p>42 km (1 hour 15 minutes)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/thenmala-wooden-bridge.avif" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌿 Thenmala Ecotourism </h4>
+                                <p>80 km (2 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/wildlife.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌳 Shendurney Wildlife Sanctuary </h4>
+                                <p>85 km (2 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                            <img src="assets/images/Neendakara_Fishing_Harbour_2717.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🐟 Neendakara Fishing Harbor</h4>
+                                <p>105 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/m_Kottayam_Illikkal_kallu_1_l_427_640.avif" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🏞 Illikkal Kallu</h4>
+                                <p>85 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/the-cliff-at-varkala-beach-kerala-photograph--ulrike-henkys.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌊 Varkala Cliff & Beach</h4>
+                                <p>95 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/929693975Ponmudi_Main2.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌲 Ponmudi Hills</h4>
+                                <p>95 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/thumbimg.jpeg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌴 Alleppey (Alappuzha) Beach</h4>
+                                <p>100 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/maxresdefault (1).jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌊 Maniyar Dam</h4>
+                                <p>40 km (1 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/Meenmutty-Waterfalls.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>💦 Meenmutty Waterfalls (Thiruvananthapuram)</h4>
+                                <p>98 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/hqdefault.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌅 Kollam Beach<br>
+                                    (Mahatma Gandhi Beach)</h4>
+                                <p>85 km (2 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/img-20190331-182233-largejpg.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🏖 Thottappally Beach</h4>
+                                <p>85 km (2 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/veli-tourist-village.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌊 Veli Tourist Village, Thiruvananthapuram </h4>
+                                <p>120 km (3–3.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/Kerala-Kovalam-Beach.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🏖 Kovalam Beach</h4>
+                                <p>130 km (3–3.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/Krishnapuram-Palace.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🏰 Krishnapuram Palace</h4>
+                                <p>85 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/Kudamaloor.stMarysChurch.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>⛪ St. Mary’s Forane Church, Kudamaloor</h4>
+                                <p>75 km (2 hours)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="blog-grid-item">
+                            <div class="image">
+                                <img src="assets/images/Sunrise-from-the-Ashtamudi-Lake-.jpg" alt="Vagamon">
+                            </div>
+                            <div class="blog-content">
+                                <h4>🌊 Munroe Island & Ashtamudi Lake</h4>
+                                <p>110 km (2.5 hours)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
          
                 <!-- Nearest Airports -->
@@ -424,15 +691,26 @@
                     <div class="col-xl-3 col-lg-5 col-sm-6">
                         <div class="footer-widget widget_about wow fadeInUp delay-0-2s">
                             <div class="footer-logo mb-25">
-                                <a href="index.html"><img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo"></a>
+                                <a href="index.html"><img src="assets/images/meadows.png" alt="Logo" style="height: 125px; width: 300px;"></a>
                             </div>
                             <p>A premium fully furnished serviced villa, offering a private and luxurious stay for VIP guests,
                                 business executives, and pilgrims traveling to Sabarimala.</p>
                             <div class="social-style-one pt-10">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/themeadowsvilla?igsh=YW55NjR4bHZkYXVh" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                  </a>
+                                  
+                                  <a href="https://wa.me/7293516434" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </a>
+                                  
+                                  <a href="mailto:themeadowsranni@gmail.com" target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                  </a>
+                                  
+                                  <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </a>
                             </div>
                         </div>
                     </div>
@@ -442,7 +720,7 @@
                             <ul class="list-style-one">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="room-list.html">Rooms</a></li>
+                                
                                 <li><a href="near.html">Nearby Attractions</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,8 +11,9 @@
     <!-- Title -->
     <title>The Meadows Villa By ABBA</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="assets/images/meadows.png"
+        type="image/x-icon">
+
     <!-- Flaticon -->
     <link rel="stylesheet" href="assets/css/flaticon.min.css">
     <!-- Font Awesome -->
@@ -30,73 +32,80 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
-<style>
-    .room-item .image {
-    overflow: hidden;
-    position: relative;
-}
+    <style>
+        .room-item .image {
+            overflow: hidden;
+            position: relative;
+        }
 
-.room-item .image img {
-    width: 100%;
-    transition: transform 0.4s ease-in-out;
-}
+        .room-item .image img {
+            width: 100%;
+            transition: transform 0.4s ease-in-out;
+        }
 
-.room-item .image:hover img {
-    transform: scale(1.1);
-}
-.feature-item h4 {
-    display: inline-block;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-}
+        .room-item .image:hover img {
+            transform: scale(1.1);
+        }
 
-/* Underline effect on hover */
-.feature-item h4::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background-color: #ffd700; /* Gold color */
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease-in-out;
-}
+        .feature-item h4 {
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
 
-.feature-item:hover h4 {
-    color:#ffd700 ; /* Gold color change on hover */
-}
+        /* Underline effect on hover */
+        .feature-item h4::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #ffd700;
+            /* Gold color */
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease-in-out;
+        }
 
-.feature-item:hover h4::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
+        .feature-item:hover h4 {
+            color: #ffd700;
+            /* Gold color change on hover */
+        }
 
-/* Fade-in effect on description */
-.feature-item p {
-    transition: opacity 0.3s ease-in-out;
-}
+        .feature-item:hover h4::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
 
-.feature-item:hover p {
-    opacity: 0.7;
-}
+        /* Fade-in effect on description */
+        .feature-item p {
+            transition: opacity 0.3s ease-in-out;
+        }
 
-.feature-item h4 {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
+        .feature-item:hover p {
+            opacity: 0.7;
+        }
 
-.feature-item:hover h4 {
-    transform: scale(1.1); /* Slightly enlarges the text */
- /* Change color on hover */
-}
-.tariff-details {
-        padding: 20px 50px; /* Adds space at the top and bottom */
-        margin-top: 0px;
-        margin-bottom: 25px;
-    }
-    .blog-grid-item {
+        .feature-item h4 {
+            display: inline-block;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .feature-item:hover h4 {
+            transform: scale(1.1);
+            /* Slightly enlarges the text */
+            /* Change color on hover */
+        }
+
+        .tariff-details {
+            padding: 20px 50px;
+            /* Adds space at the top and bottom */
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+
+        .blog-grid-item {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -104,13 +113,118 @@
             background: white;
             text-align: center;
         }
+
         .blog-grid-item:hover {
             transform: scale(1.05);
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
         }
+
+        .image img {
+            width: 120%;
+            height: 220px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .blog-content {
+            padding: 15px;
+        }
+
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-group input {
+            background-color: black;
+            /* Match other input fields */
+            border: .1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-group input, 
+        .form-group textarea, 
+        .dropdown-btn {
+            background-color: black;
+            color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .dropdown-container {
+    background-color:black !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-height: 200px; /* Set max height for scroll */
+    overflow-y: auto; /* Enable scroll when content overflows */
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* Style for each checkbox option */
+.dropdown-container div {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Style checkboxes */
+.dropdown-container input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.1); /* Slightly larger checkboxes */
+}
+
+/* Hover effect */
+.dropdown-container div:hover {
+    background: white;
+    border-radius: 3px;
+}
+    .blog-grid-item h4 {
+        color: #367755 !important; /* Change to any desired color */
+    }
+    @media (max-width: 768px) {
+    .mobile-logo img {
+        width: 250px; /* Adjust width as needed */
+        height: 80px; /* Maintain aspect ratio */
+    }
+
+    .menu-sidebar .theme-btn {
+        font-size: 12px; /* Reduce text size */
+        line-height: 1.2;
+    }
+}
+.blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+            align-items: center; /* horizontally center content */
+            justify-content: center; /* vertically center content if height is set */
+        }
+        
+
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #367755; /* ✅ Green border on hover */
+        }
         .image img {
             width: 100%;
-            height: 220px;
+            height: 250px;
             object-fit: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -127,11 +241,179 @@
             margin-bottom: 10px;
             font-size: 16px;
             color: #555;
-        }   
-   
+        }
+        .blog-grid-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            background: white;
+            text-align: center;
+        }
+        .blog-grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .image img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .blog-content {
+            padding: 15px;
+        }
+        .blog-content h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .blog-content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .form-group input {
+    background-color: black; /* Match other input fields */
+    border: .1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.blog-grid-item h4 {
+        color: #367755 !important; /* Change to any desired color */
+    }
+    .gallery-wrapper {
+      padding: 50px ;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
-</style>    
+    .main-image-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      height: 70%;
+    }
+
+    .main-image {
+      width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-image-container {
+    width: 100%;
+  }
+
+  .main-image {
+    max-height: 300px; /* or adjust based on your needs */
+  }
+}
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      font-size: 32px;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 5px;
+    }
+
+    .nav-button.left {
+      left: -60px;
+    }
+
+    .nav-button.right {
+      right: -60px;
+    }
+
+    .thumbnail-strip {
+      display:flex;
+      overflow-x: auto;
+      margin-top: 20px;
+      padding: 10px;
+      width: 90%;
+      gap: 10px;
+    }
+
+    .thumbnail-strip img {
+      height: 80px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: border 0.2s;
+    }
+
+    .thumbnail-strip img.active {
+      border: 2px solid #007bff;
+    }
+
+    /* Scrollbar styling (optional) */
+    .thumbnail-strip::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .thumbnail-strip::-webkit-scrollbar-thumb {
+      background: #aaa;
+      border-radius: 4px;
+    }
+    .contact-icons {
+  display: flex;
+  justify-content:center;
+  gap: 30px;
+  margin-top:0px;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to right,#772b21 , #367755); /* Gradient like MALHAR */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .contact-icons {
+    gap: 20px;
+  }
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+    </style>
 </head>
+
 <body class="home-one">
     <div class="page-wrapper">
 
@@ -146,21 +428,25 @@
 
                     <div class="header-inner rel d-flex align-items-center">
                         <div class="logo-outer">
-                            <div class="logo"><a href="index.html"><img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo" title="Logo" style="height: 100px; width: 250px;"></a></div>
+                            <div class="logo"><a href="index.html"><img
+                                        src="assets/images/meadows.png"
+                                        alt="Logo" title="Logo" style="height: 120px; width: 300px;"></a></div>
                         </div>
 
                         <div class="nav-outer clearfix me-auto">
                             <!-- Main Menu -->
                             <nav class="main-menu navbar-expand-lg">
                                 <div class="navbar-header">
-                                   <div class="mobile-logo my-15">
-                                       <a href="index.html">
-                                            <img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo" title="Logo">
-                                       </a>
-                                   </div>
-                                   
+                                    <div class="mobile-logo my-15">
+                                        <a href="index.html">
+                                            <img src="assets/images/meadows.png"
+                                                alt="Logo" title="Logo">
+                                        </a>
+                                    </div>
+
                                     <!-- Toggle Button -->
-                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse">
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
@@ -169,90 +455,111 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                         <li class="active"><a href="index.html">Home</a></li>
-                                         <li><a href="about.html">About us</a></li>
-                                         <li><a href="room-list.html">Rooms</a></li>
-                                         <li><a href="near.html">Nearby Attractions</a></li>
-                                         <li><a href="contact.html">Contact</a></li>
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <!-- <li><a href="room-list.html">Rooms</a></li> -->
+                                        <li><a href="near.html">Nearby Attractions</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
 
                             </nav>
                             <!-- Main Menu End-->
                         </div>
-                        
-                        
-                        
-                        <!-- Menu Button -->
-                        <!-- <div class="menu-btns">
-                           <a href="contact.html" class="theme-btn">Book Now <i class="far fa-angle-right"></i></a>
-                           
-                           
-                            
+                        <!-- <div class="menu-sidebar">
+                            <a class="theme-btn">Book Now <i class="far fa-angle-right"></i></a>
                         </div> -->
+
+
                     </div>
                 </div>
             </div>
-            <!--End Header Upper-->
         </header>
-       
-       
-        <!--Form Back Drop-->
-        <!-- <div class="form-back-drop"></div> -->
-        
         <!-- Hidden Sidebar -->
-        <!-- <section class="hidden-bar">
+        <section class="hidden-bar">
             <div class="inner-box text-center">
                 <div class="cross-icon"><span class="fa fa-times"></span></div>
                 <div class="title">
                     <h4>Get Appointment</h4>
                 </div>
 
-    
+                <!--Appointment Form-->
                 <div class="appointment-form">
                     <form method="post" action="contact.html">
                         <div class="form-group">
-                            <input type="text" name="text" value="" placeholder="Name" required>
+                            <input type="text" name="name" value="" placeholder="Name" required>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" value="" placeholder="Email Address" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Message" rows="5"></textarea>
+                            <input type="tel" name="phone" value="" placeholder="Phone Number" required>
                         </div>
+
+                        <!-- Room Selection -->
+                        <div class="form-group">
+                            <label>Select Rooms:</label>
+                            <div class="dropdown">
+                                <button class="dropdown-btn" onclick="toggleDropdown()">Select Rooms</button>
+                                <div class="dropdown-content" id="dropdownMenu">
+                                    <label><input type="checkbox" value="AC" onchange="updateSelection()"> AC Room</label>
+                                    <label><input type="checkbox" value="Non-AC" onchange="updateSelection()"> Non-AC Room</label>
+                                    <label><input type="checkbox" value="VIP" onchange="updateSelection()"> VIP Room</label>
+                                    <label><input type="checkbox" value="Deluxe" onchange="updateSelection()"> Deluxe Room</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Date Selection -->
+                        <div class="form-group">
+                            <label for="appointment_date">Select Appointment Date:</label>
+                            <input type="date" name="appointment_date" id="appointment_date" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="5"></textarea>
+                        </div>
+
                         <div class="form-group">
                             <button type="submit" class="theme-btn">Submit now</button>
+                        </div>
+                        <div id="successMessage" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+                            Thank you! We will contact you shortly.
                         </div>
                     </form>
                 </div>
 
+                <!--Social Icons-->
                 <div class="social-style-one">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!--End Hidden Sidebar -->
-       
-        
+
         <!-- Slider Section Start -->
         <section class="main-slider-area bgc-black-with-lighting rel z-1">
-           <div class="main-slider-active">
+            <div class="main-slider-active">
                 <div class="slider-item">
                     <div class="container">
                         <div class="row justify-content-end align-items-center">
                             <div class="col-xl-3">
                                 <div class="slider-content">
-                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows Vills</span>
+                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows
+                                        Villa</span>
                                     <h1>Enjoy Vacations With <span>Meadows Villa</span></h1>
-                                    <a href="room-list.html" class="theme-btn">Explore Our Rooms <i class="far fa-angle-right"></i></a>
+                                     <!-- <a href="room-list.html" class="theme-btn">Explore Our Rooms <i
+                                            class="far fa-angle-right"></i></a> -->
                                 </div>
                             </div>
                             <div class="col-xl-8">
                                 <div class="slider-image">
-                                    <img src="assets/images/luxurious-villa-with-modern-architectural-design.jpg" alt="Slider">
+                                    <img src="assets/images/IMG_5392.PNG"
+                                        alt="Slider">
                                 </div>
                             </div>
                         </div>
@@ -263,60 +570,92 @@
                         <div class="row justify-content-end align-items-center">
                             <div class="col-xl-3">
                                 <div class="slider-content">
-                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows Villa</span>
+                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows
+                                        Villa</span>
                                     <h1>Enjoy Vacations With <span>Meadows Villa</span></h1>
-                                    <a href="room-list.html" class="theme-btn">Explore Our Rooms <i class="far fa-angle-right"></i></a>
-                                </div>
+                                </div>   
                             </div>
                             <div class="col-xl-8">
                                 <div class="slider-image">
-                                    <img src="assets/images/outdoor-patio-with-table-chair.jpg" alt="Slider">
+                                    <img src="assets/images/IMG_5391.PNG" alt="Slider">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="slider-item">
                     <div class="container">
                         <div class="row justify-content-end align-items-center">
                             <div class="col-xl-3">
                                 <div class="slider-content">
-                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows Villa</span>
+                                    <span class="sub-title"><i class="fal fa-arrow-right"></i> Welcome to Meadows
+                                        Villa</span>
                                     <h1>Enjoy Vacations With <span>Meadows Villa</span></h1>
-                                    <a href="room-list.html" class="theme-btn">Explore Our Rooms <i class="far fa-angle-right"></i></a>
+                                   
                                 </div>
                             </div>
                             <div class="col-xl-8">
                                 <div class="slider-image">
-                                    <img src="assets/images/contemporary-house-architecture (1).jpg" alt="Slider">
+                                    <img src="assets/images/IMG_5395.PNG" alt="Slider">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           </div>
-           <div class="container">
-               <div class="row justify-content-center">
-                   <div class="col-xl-10">
-                       <div class="main-slider-dots"></div>
-                   </div>
-               </div>
-           </div>
+            </div>
             <div class="slider-shapes">
-               
-            </div> 
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="tel:+917293516434" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                          <p>Call</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="https://wa.me/7293516434" target="_blank">
+                          <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
+                          <p>WhatsApp</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="https://goo.gl/maps/cMycFtRJaASbVWSy8?g_st=aw" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                          <p>Direction</p>
+                        </a>
+                      </div>
+                      
+                      <div class="contact-icon">
+                        <a href="mailto:themeadowsranni@gmail.com" target="_blank">
+                          <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                          <p>Mail</p>
+                        </a>
+                      </div>
+                      
+                  </div>
+                  
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="main-slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="bg-lines">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
             </div>
         </section>
         <!-- Slider Section End -->
-        
-        
+
+
         <!-- About Area start -->
         <section class="about-area pt-130 rpt-100 rel">
             <div class="container">
@@ -332,12 +671,12 @@
                                     <i class="fal fa-play"></i>
                                     <span><b>Watch Latest</b><br> <i>Videos</i></span> 
                                 </a>  -->
-                                
-                                
-                                 <a href="about.html" class="wow fadeInRight delay-0-2s">
+
+
+                                <a href="about.html" class="wow fadeInRight delay-0-2s">
                                     <div class="icon wow fadeInLeft delay-0-2s"><i class="flaticon-hotel"></i></div>
-                                    <span ><b>Explore More</b><br></span> 
-                                </a> 
+                                    <span><b>Explore More</b><br></span>
+                                </a>
 
                                 <img src="assets/images/WhatsApp Image 2025-03-14 at 3.42.45 PM (2).jpeg" alt="About">
                             </div>
@@ -347,10 +686,13 @@
                         <div class="about-content-part">
                             <div class="section-title mb-35 wow fadeInUp delay-0-2s">
                                 <span class="sub-title mb-15">About Us </span>
-                                <h2>The Meadows Villa By ABBA</h2>
-                                <p>A premium fully furnished serviced villa, offering a private and luxurious stay for VIP guests,
-                                    business executives, and pilgrims traveling to Sabarimala. Ideally located near Ranni
-                                    Perumpuzha Bus Station, this executive retreat ensures a peaceful, comfortable, and secure
+                                <h2 style="color:#367755">The Meadows Villa By ABBA</h2>
+                                <p>A premium fully furnished serviced villa, offering a private and luxurious stay for
+                                    VIP guests,
+                                    business executives, and pilgrims traveling to Sabarimala. Ideally located near
+                                    Ranni
+                                    Perumpuzha Bus Station, this executive retreat ensures a peaceful, comfortable, and
+                                    secure
                                     stay</p>
                             </div>
                             <div class="feature-list wow fadeInUp delay-0-3s">
@@ -359,7 +701,7 @@
                                         <i class="flaticon-check-mark"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>Trusted Partners</h5>
+                                        <h5 style="color:#367755">Trusted Partners</h5>
                                         <p>Building trust, delivering excellence.</p>
                                     </div>
                                 </div>
@@ -368,40 +710,29 @@
                                         <i class="flaticon-check-mark"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>Luxury Services</h5>
+                                        <h5 style="color:#367755">Luxury Services</h5>
                                         <p>Experience comfort with a touch of luxury.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="about-author wow fadeInUp delay-0-4s">
-                                <div class="author">
-                                    <img src="assets/images/about/about-author.jpg" alt="Author">
-                                </div>
-                                <div class="description">
-                                    <h5>Robert L. Robinson</h5>
-                                    <span>CEO & Founder</span>
-                                </div>
-                                <div class="signature">
-                                    <img src="assets/images/about/signature.png" alt="Signature">
-                                </div>
-                            </div> -->
+                           
                         </div>
                     </div>
                 </div>
             </div>
             <div class="bg-lines for-bg-white">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
             </div>
         </section>
         <!-- About Area end -->
-        
-        
+
+
         <!-- Rooms Area start -->
-        <section class="rooms-area pt-130 rpt-100 pb-100 rpb-70 rel z-2">
+        <section class="rooms-area pt-130 rpt-100 pb-1580 rpb-70 rel z-2">
             <div class="container">
                 <div class="row justify-content-between align-items-center pb-20">
                     <div class="col-xl-5 col-lg-7">
@@ -409,71 +740,136 @@
                             <h2>Comfort & Luxury in Our Exclusive Stay</h2>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="theme-btn mb-40 wow fadeInRight delay-0-2s" href="room-list.html">Explore More Rooms <i class="fal fa-angle-right"></i></a>
-                    </div>
+                    <!-- <div class="col-lg-4 text-lg-end">
+                        <a class="theme-btn mb-40 wow fadeInRight delay-0-2s" href="room-list.html">Explore More Rooms
+                            <i class="fal fa-angle-right"></i></a>
+                    </div> -->
                 </div>
                 <div class="row">
                     <!-- Deluxe AC Room 1 -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="room-item wow fadeInUp delay-0-2s">
+                    <!-- Perunthenaruvi Waterfalls -->
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM </h3>
+                            </div>
                             <div class="image">
-                                <img src="assets/images/luxury1.webp" alt="Deluxe AC Room">
-                                <a class="category" >Deluxe AC</a>
+                                <img src="assets/images/IMG_5402.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
                             </div>
-                            <div class="content">
-                                <h4><a href=>Spacious Deluxe AC Room</a></h4>
-                                <ul class="room-details">
-                                    <li><i class="far fa-bed-alt"></i> Accommodates: 6 Adults & 6 Kids</li>
-                                    <li><i class="far fa-ruler-combined"></i> Size: 59 ft²</li>
-                                </ul>
-                                <p>Enjoy a luxurious stay with air-conditioning, plush bedding, and a serene ambiance.</p>
-                                <div class="price">From <span>₹10,000</span>/night</div>
-                            </div>
-                            <a class="theme-btn style-two" href="room-list.html">Explore More<i class="fal fa-angle-right"></i></a>
+                            
                         </div>
                     </div>
-        
-                    <!-- Deluxe AC Room 2 -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="room-item wow fadeInUp delay-0-4s">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM </h3>
+                            </div>
                             <div class="image">
-                                <img src="assets/images/premium1.jpg" alt="Deluxe AC Room">
-                                <a class="category" >Deluxe AC</a>
+                                <img src="assets/images/IMG_5412.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
                             </div>
-                            <div class="content">
-                                <h4><a href=>Luxury Family Deluxe AC Room</a></h4>
-                                <ul class="room-details">
-                                    <li><i class="far fa-bed-alt"></i> Accommodates: 6 Adults & 6 Kids</li>
-                                    <li><i class="far fa-ruler-combined"></i> Size: 59 ft²</li>
-                                </ul>
-                                <p>A perfect blend of comfort and elegance, designed for families or groups.</p>
-                                <div class="price">From <span>₹10,000</span>/night</div>
-                            </div>
-                            <a class="theme-btn style-two" href="room-list.html">Explore More<i class="fal fa-angle-right"></i></a>
+                            
                         </div>
                     </div>
-        
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">BEDROOM</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5425.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">LIVING ROOM</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5395.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">DINING AREA</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5399.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">WASH AREA</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5411.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">KITCHEN SPACE</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5409.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">LOUNGE AREA</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5417.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">SITOUT SPACE</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5393.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
+                            <div class="blog-content">
+                                <h3 style="color:#367755">PARKING SPACE</h3>
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/IMG_5392.PNG"
+                                    alt="Perunthenaruvi Waterfalls">
+                            </div>
+                            
+                        </div>
+                    </div>
+
                     
-        
-                    <!-- Non-AC Room -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="room-item wow fadeInUp delay-1s">
-                            <div class="image">
-                                <img src="assets/images/nonac1.jpg" alt="Non-AC Room">
-                                <a class="category">Non-AC</a>
-                            </div>
-                            <div class="content">
-                                <h4><a href="">Budget-Friendly Non-AC Room</a></h4>
-                                <ul class="room-details">
-                                    <li><i class="far fa-bed-alt"></i> Ideal for: Drivers & Assistants</li>
-                                    <li><i class="far fa-ruler-combined"></i> Size: 45 ft²</li>
-                                </ul>
-                                <p>A simple and comfortable stay for assistants or drivers at an affordable price.</p>
-                            </div>
-                            <a class="theme-btn style-two" href="room-list.html">Explore More<i class="fal fa-angle-right"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="bg-lines for-bg-white">
@@ -484,12 +880,12 @@
                 <span></span><span></span>
             </div>
         </section>
-        
+
         <!-- Rooms Area end -->
-        
-        
+
+
         <div class="for-bg-and-shapes rel z-1">
-            
+
             <!-- <div class="counter-area pb-110 rpb-80 rel z-1">
                <div class="container">
                    <div class="row gap-70">
@@ -519,125 +915,129 @@
                        </div>
                    </div>
                </div>
-            </div> --> 
+            </div> -->
             <!-- Counter Section End -->
-<!-- Features Section Start -->
-<section class="features-area pb-65 rpb-35 rel z-1">
-    <div class="container">
-        <div class="row text-white">
-            
-            <!-- Fully Air-Conditioned Villa -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-2s">
-                    <div class="content">
-                        <h4>🌬 Fully Air-Conditioned Villa</h4>
-                        <p>Experience a comfortable and relaxing stay with fully air-conditioned interiors.</p>
+            <!-- Features Section Start -->
+            <section class="features-area pb-80 rpb-35 rel z-1">
+                <div class="container">
+                    <div class="row text-white">
+
+                        <!-- Fully Air-Conditioned Villa -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-2s">
+                                <div class="content">
+                                    <h4>🌬 Fully Air-Conditioned Villa</h4>
+                                    <p>Experience a comfortable and relaxing stay with fully air-conditioned interiors.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Private BBQ Facilities -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-4s">
+                                <div class="content">
+                                    <h4>🍖 Private BBQ Facilities</h4>
+                                    <p>Enjoy delicious grilled food with our private BBQ setup available for guests.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VIP Parking for 10-16 Cars -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-6s">
+                                <div class="content">
+                                    <h4>🚗 Ample VIP Parking for 10-16 Cars</h4>
+                                    <p>Secure parking space for large groups, ensuring convenience and safety.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Exclusive Stay for VIPs & Executives -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-2s">
+                                <div class="content">
+                                    <h4>🔐 Exclusive Stay for VIPs & Executives</h4>
+                                    <p>A luxurious and private experience tailored for business executives, VIPs, and
+                                        pilgrims.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pre-Wedding Programs & Prayers -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-4s">
+                                <div class="content">
+                                    <h4>🙏 Pre-Wedding Programs & Prayers</h4>
+                                    <p>A serene and elegant setting for pre-wedding events, prayers, and intimate
+                                        ceremonies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Rental Services -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-6s">
+                                <div class="content">
+                                    <h4>🚗 Car Rental Services</h4>
+                                    <p>Licensed rent-a-car services available with or without a driver upon early
+                                        request.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Self-Sufficient Stay -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-2s">
+                                <div class="content">
+                                    <h4>🏡 Self-Sufficient Stay</h4>
+                                    <p>Fully equipped with modern amenities for a comfortable and independent stay.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nearby Restaurants -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-4s">
+                                <div class="content">
+                                    <h4>🍲 Nearby Restaurant Deliveries</h4>
+                                    <p>Delicious meals delivered directly to the villa from nearby restaurants.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Walking Distance from Bus Stand -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="feature-item style-two wow fadeInUp delay-0-6s">
+                                <div class="content">
+                                    <h4>🚌 Close to Ranni Perumpuzha Bus Stand</h4>
+                                    <p>Conveniently located within walking distance from the local bus stand.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-
-            <!-- Private BBQ Facilities -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-4s">
-                    <div class="content">
-                        <h4>🍖 Private BBQ Facilities</h4>
-                        <p>Enjoy delicious grilled food with our private BBQ setup available for guests.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- VIP Parking for 10-16 Cars -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-6s">
-                    <div class="content">
-                        <h4>🚗 Ample VIP Parking for 10-16 Cars</h4>
-                        <p>Secure parking space for large groups, ensuring convenience and safety.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Exclusive Stay for VIPs & Executives -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-2s">
-                    <div class="content">
-                        <h4>🔐 Exclusive Stay for VIPs & Executives</h4>
-                        <p>A luxurious and private experience tailored for business executives, VIPs, and pilgrims.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pre-Wedding Programs & Prayers -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-4s">
-                    <div class="content">
-                        <h4>🙏 Pre-Wedding Programs & Prayers</h4>
-                        <p>A serene and elegant setting for pre-wedding events, prayers, and intimate ceremonies.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Car Rental Services -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-6s">
-                    <div class="content">
-                        <h4>🚗 Car Rental Services</h4>
-                        <p>Licensed rent-a-car services available with or without a driver upon early request.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Self-Sufficient Stay -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-2s">
-                    <div class="content">
-                        <h4>🏡 Self-Sufficient Stay</h4>
-                        <p>Fully equipped with modern amenities for a comfortable and independent stay.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Nearby Restaurants -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-4s">
-                    <div class="content">
-                        <h4>🍲 Nearby Restaurant Deliveries</h4>
-                        <p>Delicious meals delivered directly to the villa from nearby restaurants.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Walking Distance from Bus Stand -->
-            <div class="col-xl-4 col-md-6">
-                <div class="feature-item style-two wow fadeInUp delay-0-6s">
-                    <div class="content">
-                        <h4>🚌 Close to Ranni Perumpuzha Bus Stand</h4>
-                        <p>Conveniently located within walking distance from the local bus stand.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+            </section>
 
 
-            
+ 
             <!-- Features Section End -->
-            
+
             <div class="bg-color-and-shapes bgc-black">
                 <div class="bg-lines">
-                   <span></span><span></span>
-                   <span></span><span></span>
-                   <span></span><span></span>
-                   <span></span><span></span>
-                   <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
+                    <span></span><span></span>
                 </div>
                 <div class="wave-shapes"></div>
                 <div class="wave-shapes-two"></div>
             </div>
         </div>
-        
-        
+
+
         <!-- Hotel Area start -->
         <!-- <section class="hotel-area py-130 rpy-100 rel z-1">
             <div class="container">
@@ -724,8 +1124,8 @@
             </div>
         </section> -->
         <!-- Hotel Area end -->
-        
-        
+
+
         <!-- Video Area start -->
         <!-- <div class="video-area">
             <div class="container-fluid gap-wide">
@@ -736,8 +1136,8 @@
             </div>
         </div> -->
         <!-- Video Area end -->
-        
-        
+
+
         <!-- Food Drink Area start -->
         <section class="living-dining-area pt-130 rpt-100 pb-160 rpb-130">
             <div class="container">
@@ -747,7 +1147,8 @@
                             <div class="section-title mb-40 wow fadeInUp delay-0-2s">
                                 <span class="sub-title mb-15">Spacious Living & Dining</span>
                                 <!-- <h2>Experience Comfort & Serenity in Every Corner</h2> -->
-                                <p>Enjoy a well-designed living space that blends modern aesthetics with natural beauty, offering the perfect environment for relaxation and gatherings.</p>
+                                <p>Enjoy a well-designed living space that blends modern aesthetics with natural beauty,
+                                    offering the perfect environment for relaxation and gatherings.</p>
                             </div>
                             <div class="feature-list">
                                 <div class="feature-item wow fadeInUp delay-0-2s">
@@ -755,8 +1156,9 @@
                                         <i class="flaticon-check-mark"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>🌿 Private Garden & Outdoor Seating</h5>
-                                        <p>A serene space with lush greenery, perfect for relaxation and outdoor dining.</p>
+                                        <h5 style="color:#367755">🌿 Private Garden & Outdoor Seating</h5>
+                                        <p>A serene space with lush greenery, perfect for relaxation and outdoor dining.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="feature-item wow fadeInUp delay-0-3s">
@@ -764,8 +1166,9 @@
                                         <i class="flaticon-check-mark"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>🍽 Kitchen with Modern Appliances</h5>
-                                        <p>Fully equipped kitchen featuring state-of-the-art appliances for a seamless cooking experience.</p>
+                                        <h5 style="color:#367755">🍽 Kitchen with Modern Appliances</h5>
+                                        <p>Fully equipped kitchen featuring state-of-the-art appliances for a seamless
+                                            cooking experience.</p>
                                     </div>
                                 </div>
 
@@ -774,29 +1177,31 @@
                                         <i class="flaticon-check-mark"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>🔒 Secure & Peaceful Environment</h5>
-                                        <p>Experience ultimate peace of mind with a gated and well-monitored property.</p>
+                                        <h5 style="color:#367755">🔒 Secure & Peaceful Environment</h5>
+                                        <p>Experience ultimate peace of mind with a gated and well-monitored property.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <a href="about.html" class="theme-btn style-two mt-25 wow fadeInUp delay-0-6s">Learn More <i class="far fa-angle-right"></i></a>
+                            <a href="about.html" class="theme-btn style-two mt-25 wow fadeInUp delay-0-6s">Learn More <i
+                                    class="far fa-angle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="living-dining-image rel wow fadeInUp delay-0-4s">
-                            <img src="assets/images/2012b46e6115dae3016bde339bedf89f.jpg" alt="Living & Dining Area">
-                            
+                            <img src="assets/images/IMG_5399.PNG" alt="Living & Dining Area">
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Food Drink Area end -->
-        
-        
+
+
         <!-- Testimonials Area start -->
-        <section class="testimonials-area py-130 rpy-100 rel z-1 bg-color-and-shapes bgc-black">
+        <section class="testimonials-area py-100 rpy-100 rel z-1 bg-color-and-shapes bgc-black">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- <div class="col-lg-5 wow fadeInLeft delay-0-2s">
@@ -847,60 +1252,69 @@
                             <div class="testimonial-part">
                                 <div class="testimonial-active">
                                     <div class="testimonial-item">
-                                        <p>"The Meadows Villa exceeded our expectations! The ambiance was perfect, and the hospitality was outstanding. Highly recommended for a relaxing getaway!"</p>
+                                        <p>"The Meadows Villa exceeded our expectations! The ambiance was perfect, and
+                                            the hospitality was outstanding. Highly recommended for a relaxing getaway!"
+                                        </p>
                                         <div class="testi-author">
                                             <img src="assets/images/person_1.jpg" alt="Testi Thumb">
                                             <div class="testi-des">
-                                                <h5>Sarah Thompson</h5>
+                                                <h5 style="color:#367755" >Sarah Thompson</h5>
                                                 <span>Travel Blogger</span>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="testimonial-item">
-                                        <p>"A perfect venue for our pre-wedding events. The peaceful environment and luxurious amenities made our stay truly special. Will definitely visit again!"</p>
+                                        <p>"A perfect venue for our pre-wedding events. The peaceful environment and
+                                            luxurious amenities made our stay truly special. Will definitely visit
+                                            again!"</p>
                                         <div class="testi-author">
                                             <img src="assets/images/person_2.jpg" alt="Testi Thumb">
                                             <div class="testi-des">
-                                                <h5>Jonathan & Emily Carter</h5>
+                                                <h5 style="color:#367755">Jonathan & Emily Carter</h5>
                                                 <span>Newlyweds</span>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="testimonial-item">
-                                        <p>"From the private BBQ to the spacious VIP parking, everything was top-notch. The villa is well-maintained, and the service was excellent!"</p>
+                                        <p>"From the private BBQ to the spacious VIP parking, everything was top-notch.
+                                            The villa is well-maintained, and the service was excellent!"</p>
                                         <div class="testi-author">
                                             <img src="assets/images/person_3.jpg" alt="Testi Thumb">
                                             <div class="testi-des">
-                                                <h5>David Richardson</h5>
+                                                <h5 style="color:#367755">David Richardson</h5>
                                                 <span>Business Executive</span>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="testimonial-item">
-                                        <p>"The best vacation experience! The villa is beautifully designed, and the nearby dining options were fantastic. A perfect place for a family retreat."</p>
+                                        <p>"The best vacation experience! The villa is beautifully designed, and the
+                                            nearby dining options were fantastic. A perfect place for a family retreat."
+                                        </p>
                                         <div class="testi-author">
                                             <img src="assets/images/testimonial-1.jpg" alt="Testi Thumb">
                                             <div class="testi-des">
-                                                <h5>Emma Wilson</h5>
+                                                <h5 style="color:#367755">Emma Wilson</h5>
                                                 <span>Frequent Traveler</span>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="testimonial-item">
-                                        <p>"Amazing hospitality and service. The villa offers a peaceful environment for spiritual retreats and gatherings. Highly recommended for a serene stay."</p>
+                                        <p>"Amazing hospitality and service. The villa offers a peaceful environment for
+                                            spiritual retreats and gatherings. Highly recommended for a serene stay."
+                                        </p>
                                         <div class="testi-author">
                                             <img src="assets/images/testimonial-3.jpg" alt="Testi Thumb">
                                             <div class="testi-des">
-                                                <h5>Father Joseph Matthews</h5>
+                                                <h5 style="color:#367755">Father Joseph Matthews</h5>
                                                 <span>Spiritual Guide</span>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="testimonial-thums">
                                     <div class="testi-thumb-item">
@@ -926,182 +1340,143 @@
                 </div>
             </div>
             <div class="bg-lines">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
             </div>
             <div class="wave-shapes"></div>
             <div class="wave-shapes-two"></div>
         </section>
         <!-- Testimonials Area end -->
-        
-        
-        <!-- Blog Area start -->
-       
-        <section class="blog-area pt-100 rpt-100 pb-10 rpb-70 rel z-1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8 col-md-10">
-                        <div class="section-title text-left mb-70 rmb-50 wow fadeInUp delay-0-2s">
-                            <h2>Nearby Attractions</h2>
-                           
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="theme-btn mb-40 wow fadeInRight delay-0-2s" href="near.html">Explore More<i class="fal fa-angle-right"></i></a>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <!-- Gavi -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-2s">
-                            <div class="image">
-                                <img src="assets/images/gavi.jpg" alt="Gavi">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🌳 Gavi</h4>
-                                <p>70 km (2 hours)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Konni Elephant Training Centre -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-3s">
-                            <div class="image">
-                                <img src="assets/images/Konni-elephent-camp.jpg" alt="Konni Elephant Training Centre">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🐘 Konni Elephant Training Centre</h4>
-                                <p>30 km (45 minutes)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Perunthenaruvi Waterfalls -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
-                            <div class="image">
-                                <img src="assets/images/049130489Perunthenaruvi_Falls_Main.jpg" alt="Perunthenaruvi Waterfalls">
-                            </div>
-                            <div class="blog-content">
-                                <h4>💦 Perunthenaruvi Waterfalls</h4>
-                                <p>15 km (30 minutes)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Kakki Reservoir -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-2s">
-                            <div class="image">
-                                <img src="assets/images/Kakki-Reservoir.jpg" alt="Kakki Reservoir">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🚤 Kakki Reservoir</h4>
-                                <p>45 km (1.5 hours)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Aranmula -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-3s">
-                            <div class="image">
-                                <img src="assets/images/aranmula.jpg" alt="Aranmula">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🛶 Aranmula (Heritage Village & Boat Race)</h4>
-                                <p>25 km (45 minutes)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Kuttikkanam -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
-                            <div class="image">
-                                <img src="assets/images/kuttikanam.jpg" alt="Kuttikkanam">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🌿 Kuttikkanam</h4>
-                                <p>55 km (1.5 hours)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Thekkady -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-2s">
-                            <div class="image">
-                                <img src="assets/images/thekkady.jpg" alt="Thekkady">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🐅 Thekkady</h4>
-                                <p>90 km (2.5 hours)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Adavi Ecotourism -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-3s">
-                            <div class="image">
-                                <img src="assets/images/konni-kotta vanchy.jpg" alt="Adavi Ecotourism">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🌳 Adavi Ecotourism & Kottavanchi Savari</h4>
-                                <p>27.7 km (43 minutes)</p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Vagamon -->
-                    <div class="col-xl-4 col-md-6">
-                        <div class="blog-grid-item wow fadeInUp delay-0-4s">
-                            <div class="image">
-                                <img src="assets/images/vagamon.jpg" alt="Vagamon">
-                            </div>
-                            <div class="blog-content">
-                                <h4>🏞 Vagamon</h4>
-                                <p>67.5 km (1 hour 53 minutes)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="gallery-wrapper">
+            <h2 style="color:#772b21; padding-top:1px;">Gallery</h2>
+            <div class="main-image-container">
+              <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+              <img id="mainImage" class="main-image" src="assets/images/IMG_5391.PNG" alt="Gallery Image">
+              <button class="nav-button right" onclick="nextImage()">&#10095;</button>
             </div>
-        </section>
-        
+          
+            <div class="thumbnail-strip" id="thumbnails">
+              <!-- Thumbnails will be generated here -->
+            </div>
+          </div>
+          
+          <script>
+            const images = [
+              'assets/images/IMG_5391.PNG',
+              'assets/images/IMG_5392.PNG',
+              'assets/images/IMG_5393.PNG',
+              'assets/images/IMG_5394.PNG',
+              'assets/images/IMG_5395.PNG',
+              'assets/images/IMG_5396.PNG',
+              'assets/images/IMG_5397.PNG',
+              'assets/images/IMG_5400.PNG',
+              'assets/images/IMG_5401.PNG',
+              'assets/images/IMG_5402.PNG',
+              'assets/images/IMG_5403.PNG',
+              'assets/images/IMG_5404.PNG',
+              'assets/images/IMG_5399.PNG',
+              'assets/images/IMG_5406.PNG',
+              'assets/images/IMG_5407.PNG',
+              'assets/images/IMG_5408.PNG',
+              'assets/images/IMG_5409.PNG',
+              'assets/images/IMG_5410.PNG',
+              'assets/images/IMG_5411.PNG',
+              'assets/images/IMG_5412.PNG',
+              'assets/images/IMG_5414.PNG',
+              'assets/images/IMG_5416.PNG',
+              'assets/images/IMG_5415.PNG',
+              'assets/images/IMG_5418.PNG',
+              'assets/images/IMG_5417.PNG',
+              'assets/images/IMG_5421.PNG',
+              'assets/images/IMG_5424.PNG',
+              'assets/images/IMG_5420.PNG',
+              'assets/images/IMG_5426.PNG',
+              'assets/images/IMG_5419.PNG',
+              'assets/images/IMG_5422.PNG',
+              'assets/images/IMG_5423.PNG',
+              'assets/images/IMG_5425.PNG',
+
+
+            ];
+          
+            let currentIndex = 0;
+            const mainImage = document.getElementById('mainImage');
+            const thumbnailsContainer = document.getElementById('thumbnails');
+          
+            function updateMainImage(index) {
+              currentIndex = index;
+              mainImage.src = images[index];
+          
+              document.querySelectorAll('.thumbnail-strip img').forEach((thumb, idx) => {
+                thumb.classList.toggle('active', idx === currentIndex);
+              });
+            }
+          
+            function prevImage() {
+              if (currentIndex > 0) {
+                updateMainImage(currentIndex - 1);
+              }
+            }
+          
+            function nextImage() {
+              if (currentIndex < images.length - 1) {
+                updateMainImage(currentIndex + 1);
+              }
+            }
+          
+            // Create thumbnail elements
+            images.forEach((src, index) => {
+              const img = document.createElement('img');
+              img.src = src;
+              img.alt = `Thumbnail ${index + 1}`;
+              img.onclick = () => updateMainImage(index);
+              if (index === 0) img.classList.add('active');
+              thumbnailsContainer.appendChild(img);
+            });
+          
+            updateMainImage(currentIndex);
+          </script>
+          
+          
+
+        <!-- Blog Area start -->
+
+       
+
         <!-- Blog Area end -->
         <section class="tariff-details">
             <div class="container">
-                <h3>💰 Tariff Details</h3>
-                <p>📅 Weekdays: ₹10,000 per night | 🏖️ Weekends: ₹12,000 per night | 🎉 Peak Season: ₹15,000 per night</p>
+                <h3 style="color:#367755">💰 Tariff Details</h3>
+                <p>📅 Weekdays: ₹10,000 per night | 🏖️ Weekends: ₹12,000 per night | 🎉 Peak Season: ₹15,000 per night
+                </p>
                 <hr>
-        
-                <h3>🛏 Accommodation Details</h3>
-                <p>🏠 4 Deluxe AC Rooms (6 adults & 6 kids) | 🚗 1 Non-AC Room (Ideal for drivers & assistants) | 👤 Extra Adults: ₹1,000/day per person | 👶 Extra Kids (8+ years): ₹500/day per child</p>
+
+                <h3 style="color:#367755">🛏 Accommodation Details</h3>
+                <p>🏠 4 Deluxe AC Rooms (6 adults & 6 kids) | 🚗 1 Non-AC Room (Ideal for drivers & assistants) | 👤
+                    Extra Adults: ₹1,000/day per person | 👶 Extra Kids (8+ years): ₹500/day per child</p>
                 <hr>
-        
-                <h3>🕒 Check-In & Check-Out</h3>
+
+                <h3 style="color:#367755">🕒 Check-In & Check-Out</h3>
                 <p>⏳ Check-In: 1:00 PM | ⏰ Check-Out: 11:00 AM</p>
-                <p>🕔 Early Check-In: After 6:00 AM – ₹500 extra (subject to availability) | Before 6:00 AM – Full room rent applies</p>
+                <p>🕔 Early Check-In: After 6:00 AM – ₹500 extra (subject to availability) | Before 6:00 AM – Full room
+                    rent applies</p>
                 <hr>
-                
-                <h3>📜 Policies</h3>
-                <p>❌ Unmarried couples are not allowed | 🆔 Valid ID proof required for all guests | 🍽 EP Basis – No breakfast included</p>
+
+                <h3 style="color:#367755">📜 Policies</h3>
+                <p>❌ Unmarried couples are not allowed | 🆔 Valid ID proof required for all guests | 🍽 EP Basis – No
+                    breakfast included</p>
                 <hr>
-        
-                <h3>🔐 Booking Confirmation</h3>
+
+                <h3 style="color:#367755">🔐 Booking Confirmation</h3>
                 <p>💳 To confirm your stay, kindly remit an advance payment via bank transfer, PhonePe, or GPay.</p>
                 <p>❗ Important: Funds should only be transferred after receiving the official QR code from us.</p>
             </div>
         </section>
-        
-        
+
+
         <!-- Instagram Area start -->
         <!-- <section class="instagram-area">
             <div class="instagram-item wow fadeInUp delay-0-2s">
@@ -1135,8 +1510,8 @@
             </div>
         </section> -->
         <!-- Instagram Area end -->
-        
-        
+
+
         <!-- footer area start -->
         <footer class="main-footer bgc-black-with-lighting pt-100 rel z-1">
             <div class="container">
@@ -1144,15 +1519,29 @@
                     <div class="col-xl-3 col-lg-5 col-sm-6">
                         <div class="footer-widget widget_about wow fadeInUp delay-0-2s">
                             <div class="footer-logo mb-25">
-                                <a href="index.html"><img src="assets/images/WhatsApp_Image_2025-03-14_at_3.42.45_PM__3_-removebg-preview.png" alt="Logo"></a>
+                                <a href="index.html"><img
+                                        src="assets/images/meadows.png"
+                                        alt="Logo" style="height: 125px; width: 300px;"></a>
                             </div>
-                            <p>A premium fully furnished serviced villa, offering a private and luxurious stay for VIP guests,
+                            <p>A premium fully furnished serviced villa, offering a private and luxurious stay for VIP
+                                guests,
                                 business executives, and pilgrims traveling to Sabarimala.</p>
                             <div class="social-style-one pt-10">
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/themeadowsvilla?igsh=YW55NjR4bHZkYXVh" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                  </a>
+                                  
+                                  <a href="https://wa.me/7293516434" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                  </a>
+                                  
+                                  <a href="mailto:themeadowsranni@gmail.com" target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                  </a>
+                                  
+                                  <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </a>
                             </div>
                         </div>
                     </div>
@@ -1162,7 +1551,7 @@
                             <ul class="list-style-one">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="room-list.html">Rooms</a></li>
+                                <!-- <li><a href="room-list.html">Rooms</a></li> -->
                                 <li><a href="near.html">Nearby Attractions</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
@@ -1180,41 +1569,42 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="footer-bottom bgd-dark mt-40 pt-20 pb-5 rpt-25">
                 <div class="container">
-                   <div class="row">
-                       <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6">
                             <div class="copyright-text">
-                                <p>Designed By<a href="">   Cognetz</a></p>
+                                <p>Designed By<a href=""> Cognetz</a></p>
                             </div>
-                       </div>
-                       
-                   </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="bg-lines">
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
-               <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
+                <span></span><span></span>
             </div>
             <div class="wave-shapes"></div>
             <div class="wave-shapes-two"></div>
         </footer>
         <!-- footer area end -->
-        
-        
+
+
         <!-- Scroll Top Button -->
-        <button class="scroll-top scroll-to-target" data-target="html"><span class="fas fa-angle-double-up"></span></button>
+        <button class="scroll-top scroll-to-target" data-target="html"><span
+                class="fas fa-angle-double-up"></span></button>
 
     </div>
     <!--End pagewrapper-->
-   
-    
+
+
     <!-- Jquery -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
@@ -1239,6 +1629,47 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
-
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdownMenu");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    
+        function updateSelection() {
+            var checkboxes = document.querySelectorAll(".dropdown-content input[type='checkbox']");
+            var selectedRooms = [];
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    selectedRooms.push(checkbox.value);
+                }
+            });
+            document.querySelector(".dropdown-btn").innerText = selectedRooms.length > 0 ? selectedRooms.join(", ") : "Select Rooms";
+        }
+    
+        // Close dropdown if clicked outside
+        document.addEventListener("click", function(event) {
+            var dropdown = document.querySelector(".dropdown");
+            if (!dropdown.contains(event.target)) {
+                document.getElementById("dropdownMenu").style.display = "none";
+            }
+        });
+    </script>
+    <script>
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            
+            // Display success message
+            document.getElementById("successMessage").style.display = "block";
+            
+            // Clear form fields
+            this.reset();
+    
+            // Optionally hide the message after a few seconds
+            setTimeout(() => {
+                document.getElementById("successMessage").style.display = "none";
+            }, 5000);
+        });
+    </script>
 </body>
+
 </html>
