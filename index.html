@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <style>
+      html, body {
+  overflow-x: hidden;
+}
         .room-item .image {
             overflow: hidden;
             position: relative;
@@ -322,7 +325,7 @@
   }
 }
     .nav-button {
-      position: absolute;
+      position: fixed;
       top: 50%;
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.7);
@@ -939,7 +942,7 @@
         <!-- <div class="for-bg-and-shapes rel z-1" style="background-color:white;">  -->
 
            
-            <section class="features-area pb-80 rpb-35 rel z-1 villa-features-bg ">
+            <section class="features-area rpb-35 rel z-1 villa-features-bg ">
                 <div class="container">
                     <div class="row text-white">
 
@@ -978,7 +981,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="feature-item style-two wow fadeInUp delay-0-2s">
                                 <div class="content">
-                                    <h4>🔐 Exclusive Stay for VIPs & Executives</h4>
+                                    <h4>🔐 Exclusive Stay for VIPs & <span style="margin-left: 37px;">Executives</span></h4>
                                     <p>A luxurious and private experience tailored for business executives, VIPs, and
                                         pilgrims.</p>
                                 </div>
@@ -1031,7 +1034,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="feature-item style-two wow fadeInUp delay-0-6s">
                                 <div class="content">
-                                    <h4>🚌 Close to Ranni Perumpuzha Bus Stand</h4>
+                                    <h4>🚌 Close to Ranni Perumpuzha Bus <span style="margin-left: 37px;"> Stand </span></h4>
                                     <p>Conveniently located within walking distance from the local bus stand.</p>
                                 </div>
                             </div>
@@ -1041,7 +1044,26 @@
                 </div>
             </section>
 
+<style>
+    @media (max-width: 767px) {
+  .features-area .feature-item {
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
 
+  .features-area .feature-item .content h4,
+  .features-area .feature-item .content p {
+    text-align: center !important;
+  }
+
+  .features-area .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+</style>
             <!-- Features Section End -->
 
             <div class="bg-color-and-shapes bgc-black">
@@ -1715,7 +1737,7 @@
                             <div class="footer-logo mb-25">
                                 <a href="index.html"><img
                                         src="assets/images/meadows.png"
-                                        alt="Logo" style="height: 125px; width: 300px;"></a>
+                                        alt="Logo" style="height: 120px; width: 300px;"></a>
                             </div>
                             <p>A premium fully furnished serviced villa, offering a private and luxurious stay for VIP
                                 guests,
